@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mohamed.networkinfo.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/textView85"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_alignStart="@+id/textView96"
+            android:layout_below="@+id/textView98"
+            android:layout_marginTop="22dp"
+            android:text="Up speed" />
+
+        <TextView
+            android:id="@+id/textView99"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_alignStart="@+id/textView85"
+            android:layout_below="@+id/textView85"
+            android:layout_marginTop="11dp"
+            android:text="Down Speed" />
+
+        <TextView
+            android:id="@+id/textView98"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_alignStart="@+id/textView85"
+            android:layout_below="@+id/textView96"
+            android:layout_marginTop="10dp"
+            android:text="Longitude" />
+
+        <TextView
+            android:id="@+id/textView96"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_alignStart="@+id/textView95"
+            android:layout_below="@+id/textView95"
+            android:layout_marginTop="36dp"
+            android:text="Latitude" />
+
+        <TextView
+            android:id="@+id/textView95"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_alignStart="@+id/textView94"
+            android:layout_below="@+id/textView94"
+            android:layout_marginTop="11dp"
+            android:text="N-CellID" />
+
+        <TextView
+            android:id="@+id/textView94"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_alignStart="@+id/textView93"
+            android:layout_below="@+id/textView93"
+            android:layout_marginTop="12dp"
+            android:text="cellID" />
+
+        <TextView
+            android:id="@+id/textView93"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_alignStart="@+id/textView92"
+            android:layout_below="@+id/textView92"
+            android:layout_marginTop="11dp"
+            android:text="Signal strength" />
+
+        <TextView
+            android:id="@+id/textView92"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_alignStart="@+id/textView91"
+            android:layout_below="@+id/textView91"
+            android:layout_marginTop="11dp"
+            android:text="Type" />
+
+        <TextView
+            android:id="@+id/textView91"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="15dp"
+            android:text="Service provider" />
+
+        <TextView
+            android:id="@+id/networkType"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_alignBaseline="@+id/textView92"
+            android:layout_alignBottom="@+id/textView92"
+            android:layout_alignStart="@+id/providerName"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/downSpeed"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_alignBaseline="@+id/textView99"
+            android:layout_alignBottom="@+id/textView99"
+            android:layout_alignStart="@+id/upSpeed"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/upSpeed"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_alignBaseline="@+id/textView85"
+            android:layout_alignBottom="@+id/textView85"
+            android:layout_alignStart="@+id/lon"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/lon"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:text="-"
+            android:layout_alignBaseline="@+id/textView98"
+            android:layout_alignBottom="@+id/textView98"
+            android:layout_alignStart="@+id/lat" />
+
+        <TextView
+            android:id="@+id/lat"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_alignBaseline="@+id/textView96"
+            android:layout_alignBottom="@+id/textView96"
+            android:layout_alignStart="@+id/nCellID"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/nCellID"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_alignBaseline="@+id/textView95"
+            android:layout_alignBottom="@+id/textView95"
+            android:layout_alignStart="@+id/cellID"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/cellID"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_alignBaseline="@+id/textView94"
+            android:layout_alignBottom="@+id/textView94"
+            android:layout_alignStart="@+id/signalStrength"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/signalStrength"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_alignBaseline="@+id/textView93"
+            android:layout_alignBottom="@+id/textView93"
+            android:layout_alignStart="@+id/networkType"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/providerName"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="34dp"
+            android:text="-"
+            android:layout_alignBaseline="@+id/textView91"
+            android:layout_alignBottom="@+id/textView91"
+            android:layout_toEndOf="@+id/textView91" />
+
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView99"
+            android:layout_below="@+id/textView99"
+            android:layout_marginTop="18dp"
+            android:text="Send" />
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
